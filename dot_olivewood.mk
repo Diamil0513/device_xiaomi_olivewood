@@ -20,6 +20,9 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # OFFICAL STUFF
 TARGET_FACE_UNLOCK_SUPPORTED = true
 
+# Offline Charging
+TARGET_INCLUDE_PIXEL_CHARGER := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := dot_olivewood
 PRODUCT_DEVICE := olivewood
