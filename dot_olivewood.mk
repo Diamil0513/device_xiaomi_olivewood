@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The ArrowOS Project
+# Copyright (C) 2021 The DotOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,23 +11,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from olivewood device
 $(call inherit-product, device/xiaomi/olivewood/device.mk)
 
-# Inherit some ppui stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some dot stuff.
+$(call inherit-product, vendor/dot/config/common.mk)
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_USES_AOSP_RECOVERY := true
-IS_PHONE := true
 
 # OFFICAL STUFF
-CUSTOM_BUILD_TYPE=OFFICIAL
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
-TARGET_INCLUDE_STOCK_ACORE := false
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_FACE_UNLOCK_SUPPORTED = true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_olivewood
+PRODUCT_NAME := dot_olivewood
 PRODUCT_DEVICE := olivewood
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 8A Dual
